@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#df354a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionActivity">
+
+    <ImageView
+        android:id="@+id/frameInstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_instruction" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="266dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="36dp"
+        android:justificationMode="inter_word"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/readyButton"
+        app:layout_constraintEnd_toEndOf="@+id/frameInstruction"
+        app:layout_constraintStart_toStartOf="@+id/frameInstruction"
+        app:layout_constraintTop_toTopOf="@+id/frameInstruction"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <ImageButton
+        android:id="@+id/readyButton"
+        android:layout_width="278dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/frameInstruction"
+        app:srcCompat="@drawable/bg_btn_keys" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="108dp"
+        android:text="Listo!"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="@+id/readyButton"
+        app:layout_constraintTop_toTopOf="@+id/readyButton" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

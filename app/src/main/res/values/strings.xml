@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PokedexTest</string>
+
+    <string name="charizard">charizard</string>
+    <string name="pikachu">pikachu</string>
+    <string name="jigglypuff">jigglypuff</string>
+    <string name="meowth">meowth</string>
+    <string name="psyduck">psyduck</string>
+    <string name="cubone">cubone</string>
+
+</resources>

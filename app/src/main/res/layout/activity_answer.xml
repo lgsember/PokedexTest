@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#fb5852"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnswerActivity">
+
+    <ImageView
+        android:id="@+id/frameAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_question" />
+
+    <ImageView
+        android:id="@+id/pkmnImg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameAnswer"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/frameAnswer"
+        app:layout_constraintTop_toTopOf="@+id/frameAnswer"
+        app:layout_constraintVertical_bias="0.327"
+        app:srcCompat="@drawable/icon_cam" />
+
+    <TextView
+        android:id="@+id/correctionText"
+        android:layout_width="252dp"
+        android:layout_height="85dp"
+        android:text="Correcion"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+        app:layout_constraintEnd_toEndOf="@+id/frameAnswer"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/frameAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/pkmnImg"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:text="Seguir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/frameAnswer"
+        app:layout_constraintStart_toStartOf="@+id/frameAnswer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
